@@ -1,0 +1,19 @@
+# Core pipeline (data prep, EDA, classical models, demo export) -- runs on any laptop CPU
+pandas>=2.0
+numpy>=1.26
+scikit-learn>=1.4
+scipy>=1.11
+matplotlib>=3.8
+joblib>=1.3
+
+# Web UI (optional):  python src/app.py
+gradio>=4.0
+
+# Transformer fine-tuning (optional, GPU recommended): python src/train_transformer.py
+torch>=2.1
+transformers>=4.44
+accelerate>=0.33
+
+# Clinical NER (optional): python src/ner.py
+# plus the model: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz
+scispacy>=0.5.4
